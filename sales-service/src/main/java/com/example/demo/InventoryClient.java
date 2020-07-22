@@ -12,7 +12,7 @@ import com.example.model.Product;
 
 //"http://localhost:8000"
 //"http://stockservicerds-env-1.eba-dwrqj2wp.us-east-1.elasticbeanstalk.com/"
-@FeignClient(value = "inventory-service",url = "http://stockservicerds-env-1.eba-dwrqj2wp.us-east-1.elasticbeanstalk.com/",
+@FeignClient(value = "inventory-service",url = "http://localhost:8000",
 configuration = FeignConfiguration.class)
 public interface InventoryClient {
 
